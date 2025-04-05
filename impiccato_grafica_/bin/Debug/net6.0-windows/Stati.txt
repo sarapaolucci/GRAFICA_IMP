@@ -1,0 +1,15 @@
+facile = spagna
+facile = italia
+facile = francia
+facile = germania
+facile = grecia
+medio = lituania
+medio = argentina
+medio = estonia
+medio = lussemburgo
+medio = portogallo
+difficile = ecuador
+difficile = madagascar
+difficile = guatemala
+difficile = armenia
+difficile = bolivia

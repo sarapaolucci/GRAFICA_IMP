@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\paolucci.sara\\Documents\\Visual Studio 2022\\impiccato_grafica_\\impiccato_grafica_\\impiccato_grafica_.csproj",
+      "projectUniqueName": "C:\\Users\\paolucci.sara\\Desktop\\GitHub\\GRAFICA_IMP\\impiccato_grafica_\\impiccato_grafica_.csproj",
       "projectName": "impiccato_grafica_",
-      "projectPath": "C:\\Users\\paolucci.sara\\Documents\\Visual Studio 2022\\impiccato_grafica_\\impiccato_grafica_\\impiccato_grafica_.csproj",
+      "projectPath": "C:\\Users\\paolucci.sara\\Desktop\\GitHub\\GRAFICA_IMP\\impiccato_grafica_\\impiccato_grafica_.csproj",
       "packagesPath": "C:\\Users\\paolucci.sara\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\paolucci.sara\\Documents\\Visual Studio 2022\\impiccato_grafica_\\impiccato_grafica_\\obj\\",
+      "outputPath": "C:\\Users\\paolucci.sara\\Desktop\\GitHub\\GRAFICA_IMP\\impiccato_grafica_\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -31,14 +31,7 @@
             label1 = new Label();
             label2 = new Label();
             label4 = new Label();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
             label5 = new Label();
-            button1 = new Button();
-            button6 = new Button();
-            button7 = new Button();
             button8 = new Button();
             button9 = new Button();
             button10 = new Button();
@@ -73,16 +66,23 @@
             label9 = new Label();
             textBox1 = new TextBox();
             label10 = new Label();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox3 = new CheckBox();
+            button35 = new Button();
+            button36 = new Button();
+            button37 = new Button();
+            stati = new CheckBox();
+            film = new CheckBox();
+            serie = new CheckBox();
+            cantanti = new CheckBox();
+            facile = new CheckBox();
+            difficile = new CheckBox();
+            media = new CheckBox();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Nueva Std Cond", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(306, 9);
+            label1.Location = new Point(399, 12);
             label1.Name = "label1";
             label1.Size = new Size(198, 48);
             label1.TabIndex = 0;
@@ -92,7 +92,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(444, 426);
+            label2.Location = new Point(12, 415);
             label2.Name = "label2";
             label2.Size = new Size(127, 15);
             label2.TabIndex = 2;
@@ -102,90 +102,26 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(12, 398);
+            label4.Location = new Point(12, 33);
             label4.Name = "label4";
             label4.Size = new Size(83, 15);
             label4.TabIndex = 4;
             label4.Text = "SCEGLI TEMA:";
             label4.Click += label4_Click;
             // 
-            // button2
-            // 
-            button2.Location = new Point(99, 392);
-            button2.Name = "button2";
-            button2.Size = new Size(63, 27);
-            button2.TabIndex = 5;
-            button2.Text = "Stati";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(168, 392);
-            button3.Name = "button3";
-            button3.Size = new Size(64, 27);
-            button3.TabIndex = 6;
-            button3.Text = "Cantanti";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.Location = new Point(238, 392);
-            button4.Name = "button4";
-            button4.Size = new Size(66, 27);
-            button4.TabIndex = 7;
-            button4.Text = "Serie";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
-            // 
-            // button5
-            // 
-            button5.Location = new Point(310, 392);
-            button5.Name = "button5";
-            button5.Size = new Size(68, 27);
-            button5.TabIndex = 8;
-            button5.Text = "Film";
-            button5.UseVisualStyleBackColor = true;
-            // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(12, 426);
+            label5.Location = new Point(12, 188);
             label5.Name = "label5";
             label5.Size = new Size(118, 15);
             label5.TabIndex = 9;
             label5.Text = "SCEGLI DIFFICOLTA':";
             // 
-            // button1
-            // 
-            button1.Location = new Point(132, 421);
-            button1.Name = "button1";
-            button1.Size = new Size(66, 25);
-            button1.TabIndex = 10;
-            button1.Text = "Facile";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            button6.Location = new Point(204, 421);
-            button6.Name = "button6";
-            button6.Size = new Size(66, 25);
-            button6.TabIndex = 11;
-            button6.Text = "Medio";
-            button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            button7.Location = new Point(276, 421);
-            button7.Name = "button7";
-            button7.Size = new Size(73, 25);
-            button7.TabIndex = 12;
-            button7.Text = "Difficile";
-            button7.UseVisualStyleBackColor = true;
-            // 
             // button8
             // 
-            button8.Location = new Point(173, 181);
+            button8.Location = new Point(235, 188);
             button8.Name = "button8";
             button8.Size = new Size(30, 30);
             button8.TabIndex = 13;
@@ -194,7 +130,7 @@
             // 
             // button9
             // 
-            button9.Location = new Point(313, 217);
+            button9.Location = new Point(375, 224);
             button9.Name = "button9";
             button9.Size = new Size(30, 30);
             button9.TabIndex = 14;
@@ -203,7 +139,7 @@
             // 
             // button10
             // 
-            button10.Location = new Point(348, 289);
+            button10.Location = new Point(410, 296);
             button10.Name = "button10";
             button10.Size = new Size(30, 30);
             button10.TabIndex = 15;
@@ -212,7 +148,7 @@
             // 
             // button11
             // 
-            button11.Location = new Point(243, 253);
+            button11.Location = new Point(305, 260);
             button11.Name = "button11";
             button11.Size = new Size(30, 30);
             button11.TabIndex = 16;
@@ -221,7 +157,7 @@
             // 
             // button12
             // 
-            button12.Location = new Point(383, 181);
+            button12.Location = new Point(445, 188);
             button12.Name = "button12";
             button12.Size = new Size(30, 30);
             button12.TabIndex = 17;
@@ -230,7 +166,7 @@
             // 
             // button13
             // 
-            button13.Location = new Point(208, 253);
+            button13.Location = new Point(270, 260);
             button13.Name = "button13";
             button13.Size = new Size(30, 30);
             button13.TabIndex = 18;
@@ -239,7 +175,7 @@
             // 
             // button14
             // 
-            button14.Location = new Point(278, 289);
+            button14.Location = new Point(340, 296);
             button14.Name = "button14";
             button14.Size = new Size(30, 30);
             button14.TabIndex = 19;
@@ -248,7 +184,7 @@
             // 
             // button15
             // 
-            button15.Location = new Point(208, 289);
+            button15.Location = new Point(270, 296);
             button15.Name = "button15";
             button15.Size = new Size(30, 30);
             button15.TabIndex = 20;
@@ -257,7 +193,7 @@
             // 
             // button16
             // 
-            button16.Location = new Point(313, 181);
+            button16.Location = new Point(375, 188);
             button16.Name = "button16";
             button16.Size = new Size(30, 30);
             button16.TabIndex = 21;
@@ -266,7 +202,7 @@
             // 
             // button17
             // 
-            button17.Location = new Point(278, 217);
+            button17.Location = new Point(340, 224);
             button17.Name = "button17";
             button17.Size = new Size(30, 30);
             button17.TabIndex = 22;
@@ -275,7 +211,7 @@
             // 
             // button18
             // 
-            button18.Location = new Point(278, 181);
+            button18.Location = new Point(340, 188);
             button18.Name = "button18";
             button18.Size = new Size(30, 30);
             button18.TabIndex = 23;
@@ -284,7 +220,7 @@
             // 
             // button19
             // 
-            button19.Location = new Point(173, 217);
+            button19.Location = new Point(235, 224);
             button19.Name = "button19";
             button19.Size = new Size(30, 30);
             button19.TabIndex = 24;
@@ -293,7 +229,7 @@
             // 
             // button20
             // 
-            button20.Location = new Point(348, 181);
+            button20.Location = new Point(410, 188);
             button20.Name = "button20";
             button20.Size = new Size(30, 30);
             button20.TabIndex = 25;
@@ -302,7 +238,7 @@
             // 
             // button21
             // 
-            button21.Location = new Point(313, 253);
+            button21.Location = new Point(375, 260);
             button21.Name = "button21";
             button21.Size = new Size(30, 30);
             button21.TabIndex = 26;
@@ -311,7 +247,7 @@
             // 
             // button22
             // 
-            button22.Location = new Point(348, 217);
+            button22.Location = new Point(410, 224);
             button22.Name = "button22";
             button22.Size = new Size(30, 30);
             button22.TabIndex = 27;
@@ -320,7 +256,7 @@
             // 
             // button23
             // 
-            button23.Location = new Point(313, 289);
+            button23.Location = new Point(375, 296);
             button23.Name = "button23";
             button23.Size = new Size(30, 30);
             button23.TabIndex = 28;
@@ -329,7 +265,7 @@
             // 
             // button24
             // 
-            button24.Location = new Point(243, 289);
+            button24.Location = new Point(305, 296);
             button24.Name = "button24";
             button24.Size = new Size(30, 30);
             button24.TabIndex = 29;
@@ -338,7 +274,7 @@
             // 
             // button25
             // 
-            button25.Location = new Point(348, 253);
+            button25.Location = new Point(410, 260);
             button25.Name = "button25";
             button25.Size = new Size(30, 30);
             button25.TabIndex = 30;
@@ -347,7 +283,7 @@
             // 
             // button26
             // 
-            button26.Location = new Point(383, 217);
+            button26.Location = new Point(445, 224);
             button26.Name = "button26";
             button26.Size = new Size(30, 30);
             button26.TabIndex = 31;
@@ -356,7 +292,7 @@
             // 
             // button27
             // 
-            button27.Location = new Point(383, 253);
+            button27.Location = new Point(445, 260);
             button27.Name = "button27";
             button27.Size = new Size(30, 30);
             button27.TabIndex = 32;
@@ -365,7 +301,7 @@
             // 
             // button28
             // 
-            button28.Location = new Point(243, 181);
+            button28.Location = new Point(305, 188);
             button28.Name = "button28";
             button28.Size = new Size(30, 30);
             button28.TabIndex = 33;
@@ -374,7 +310,7 @@
             // 
             // button29
             // 
-            button29.Location = new Point(243, 217);
+            button29.Location = new Point(305, 224);
             button29.Name = "button29";
             button29.Size = new Size(30, 30);
             button29.TabIndex = 34;
@@ -383,7 +319,7 @@
             // 
             // button30
             // 
-            button30.Location = new Point(278, 253);
+            button30.Location = new Point(340, 260);
             button30.Name = "button30";
             button30.Size = new Size(30, 30);
             button30.TabIndex = 35;
@@ -392,7 +328,7 @@
             // 
             // button31
             // 
-            button31.Location = new Point(208, 181);
+            button31.Location = new Point(270, 188);
             button31.Name = "button31";
             button31.Size = new Size(30, 30);
             button31.TabIndex = 36;
@@ -401,7 +337,7 @@
             // 
             // button32
             // 
-            button32.Location = new Point(208, 217);
+            button32.Location = new Point(270, 224);
             button32.Name = "button32";
             button32.Size = new Size(30, 30);
             button32.TabIndex = 37;
@@ -410,7 +346,7 @@
             // 
             // button33
             // 
-            button33.Location = new Point(173, 253);
+            button33.Location = new Point(235, 260);
             button33.Name = "button33";
             button33.Size = new Size(30, 30);
             button33.TabIndex = 38;
@@ -427,22 +363,24 @@
             button34.TabIndex = 39;
             button34.Text = "ESCI";
             button34.UseVisualStyleBackColor = false;
+            button34.Click += button34_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Charlemagne Std", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(278, 91);
+            label3.Location = new Point(366, 95);
             label3.Name = "label3";
             label3.Size = new Size(256, 29);
             label3.TabIndex = 40;
             label3.Text = "PAROLA TRATTINI";
+            label3.TextAlign = ContentAlignment.TopCenter;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(444, 404);
+            label6.Location = new Point(12, 390);
             label6.Name = "label6";
             label6.Size = new Size(108, 15);
             label6.TabIndex = 41;
@@ -452,7 +390,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(444, 380);
+            label7.Location = new Point(12, 364);
             label7.Name = "label7";
             label7.Size = new Size(45, 15);
             label7.TabIndex = 42;
@@ -462,7 +400,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(246, 150);
+            label8.Location = new Point(308, 157);
             label8.Name = "label8";
             label8.Size = new Size(98, 15);
             label8.TabIndex = 43;
@@ -472,7 +410,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(467, 154);
+            label9.Location = new Point(551, 157);
             label9.Name = "label9";
             label9.Size = new Size(95, 15);
             label9.TabIndex = 44;
@@ -480,7 +418,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(467, 181);
+            textBox1.Location = new Point(551, 184);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(120, 23);
             textBox1.TabIndex = 45;
@@ -489,41 +427,117 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(467, 217);
+            label10.Location = new Point(551, 220);
             label10.Name = "label10";
             label10.Size = new Size(99, 15);
             label10.TabIndex = 46;
             label10.Text = "INDIZI LIMITATI:";
             // 
-            // checkBox1
+            // button35
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(467, 239);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(110, 19);
-            checkBox1.TabIndex = 47;
-            checkBox1.Text = "PRIMA LETTERA";
-            checkBox1.UseVisualStyleBackColor = true;
+            button35.Location = new Point(551, 267);
+            button35.Name = "button35";
+            button35.Size = new Size(104, 23);
+            button35.TabIndex = 50;
+            button35.Text = "ULTIMA LETTERA";
+            button35.UseVisualStyleBackColor = true;
+            button35.Click += button35_Click;
             // 
-            // checkBox2
+            // button36
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(467, 264);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(115, 19);
-            checkBox2.TabIndex = 48;
-            checkBox2.Text = "ULTIMA LETTERA";
-            checkBox2.UseVisualStyleBackColor = true;
+            button36.Location = new Point(553, 238);
+            button36.Name = "button36";
+            button36.Size = new Size(102, 23);
+            button36.TabIndex = 51;
+            button36.Text = "PRIMA LETTERA";
+            button36.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // button37
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(467, 289);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(163, 19);
-            checkBox3.TabIndex = 49;
-            checkBox3.Text = "PRIMA E ULTIMA LETTERA";
-            checkBox3.UseVisualStyleBackColor = true;
+            button37.Location = new Point(553, 292);
+            button37.Name = "button37";
+            button37.Size = new Size(102, 23);
+            button37.TabIndex = 52;
+            button37.Text = "ENTRAMBE";
+            button37.UseVisualStyleBackColor = true;
+            button37.Click += button37_Click;
+            // 
+            // stati
+            // 
+            stati.AutoSize = true;
+            stati.Location = new Point(18, 55);
+            stati.Name = "stati";
+            stati.Size = new Size(53, 19);
+            stati.TabIndex = 53;
+            stati.Text = "STATI";
+            stati.UseVisualStyleBackColor = true;
+            stati.CheckedChanged += checkBox1_CheckedChanged;
+            // 
+            // film
+            // 
+            film.AutoSize = true;
+            film.Location = new Point(18, 130);
+            film.Name = "film";
+            film.Size = new Size(52, 19);
+            film.TabIndex = 54;
+            film.Text = "FILM";
+            film.UseVisualStyleBackColor = true;
+            film.CheckedChanged += film_CheckedChanged;
+            // 
+            // serie
+            // 
+            serie.AutoSize = true;
+            serie.Location = new Point(18, 105);
+            serie.Name = "serie";
+            serie.Size = new Size(54, 19);
+            serie.TabIndex = 55;
+            serie.Text = "SERIE";
+            serie.UseVisualStyleBackColor = true;
+            serie.CheckedChanged += serie_CheckedChanged;
+            // 
+            // cantanti
+            // 
+            cantanti.AutoSize = true;
+            cantanti.Location = new Point(18, 80);
+            cantanti.Name = "cantanti";
+            cantanti.Size = new Size(82, 19);
+            cantanti.TabIndex = 56;
+            cantanti.Text = "CANTANTI";
+            cantanti.UseVisualStyleBackColor = true;
+            cantanti.CheckedChanged += checkBox4_CheckedChanged;
+            // 
+            // facile
+            // 
+            facile.AutoSize = true;
+            facile.Location = new Point(18, 213);
+            facile.Name = "facile";
+            facile.Size = new Size(62, 19);
+            facile.TabIndex = 57;
+            facile.Text = "FACILE";
+            facile.UseVisualStyleBackColor = true;
+            facile.CheckedChanged += facile_CheckedChanged;
+            // 
+            // difficile
+            // 
+            difficile.AutoSize = true;
+            difficile.Location = new Point(17, 260);
+            difficile.Name = "difficile";
+            difficile.Size = new Size(75, 19);
+            difficile.TabIndex = 58;
+            difficile.Text = "DIFFICILE";
+            difficile.UseVisualStyleBackColor = true;
+            difficile.CheckedChanged += difficile_CheckedChanged;
+            // 
+            // media
+            // 
+            media.AutoSize = true;
+            media.Location = new Point(17, 235);
+            media.Name = "media";
+            media.Size = new Size(62, 19);
+            media.TabIndex = 59;
+            media.Text = "MEDIA";
+            media.UseVisualStyleBackColor = true;
+            media.CheckedChanged += media_CheckedChanged;
             // 
             // Form1
             // 
@@ -531,9 +545,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(192, 192, 255);
             ClientSize = new Size(800, 450);
-            Controls.Add(checkBox3);
-            Controls.Add(checkBox2);
-            Controls.Add(checkBox1);
+            Controls.Add(media);
+            Controls.Add(difficile);
+            Controls.Add(facile);
+            Controls.Add(cantanti);
+            Controls.Add(serie);
+            Controls.Add(film);
+            Controls.Add(stati);
+            Controls.Add(button37);
+            Controls.Add(button36);
+            Controls.Add(button35);
             Controls.Add(label10);
             Controls.Add(textBox1);
             Controls.Add(label9);
@@ -568,14 +589,7 @@
             Controls.Add(button10);
             Controls.Add(button9);
             Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button1);
             Controls.Add(label5);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
             Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -591,14 +605,7 @@
         private Label label1;
         private Label label2;
         private Label label4;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
         private Label label5;
-        private Button button1;
-        private Button button6;
-        private Button button7;
         private Button button8;
         private Button button9;
         private Button button10;
@@ -633,8 +640,15 @@
         private Label label9;
         private TextBox textBox1;
         private Label label10;
-        private CheckBox checkBox1;
-        private CheckBox checkBox2;
-        private CheckBox checkBox3;
+        private Button button35;
+        private Button button36;
+        private Button button37;
+        private CheckBox stati;
+        private CheckBox film;
+        private CheckBox serie;
+        private CheckBox cantanti;
+        private CheckBox facile;
+        private CheckBox difficile;
+        private CheckBox media;
     }
 }
