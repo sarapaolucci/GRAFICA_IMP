@@ -104,13 +104,14 @@ namespace impiccato_grafica_
             ntentativi = 10;
             punti = 7;
         }
-        void stamparray(string[] a)
+        string stamparray(string[] a)
         {
+            string e = "";
             for (int i = 0; i < a.Length; i++)
             {
-                Console.Write(a[i]);
+                e +=(a[i]);
             }
-            Console.WriteLine();
+            return e;
         }
         void trattini(string parola, ref string[] par)
         {
@@ -129,12 +130,34 @@ namespace impiccato_grafica_
         {
 
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             string[] par = new string[parola.Length];
             trattini(parola, ref par);
             label3.Text = stamparray(par);
+        }
+        void provalettera(ref string[] par, string[] r, string parola, ref int ntentativi, ref string lettere_provate)
+        {
+            Console.WriteLine("Inserisci lettera (se sbagli sprechi due tentativi)");
+            string l = Console.ReadLine();
+            lettere_provate = lettere_provate + l + ", ";
+            if (parola.Contains(l) == true)
+            {
+                Console.WriteLine("Hai indovinato la lettera!");
+                for (int i = 0; i < r.Length; i++)
+                {
+                    if (r[i] == l)
+                    {
+                        par[i] = l;
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Non hai indovinato la lettera!");
+                ntentativi--;
+            }
+            ntentativi--;
         }
     }
 }
