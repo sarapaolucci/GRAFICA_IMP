@@ -76,13 +76,14 @@
             facile = new CheckBox();
             difficile = new CheckBox();
             media = new CheckBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Nueva Std Cond", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(399, 12);
+            label1.Location = new Point(408, 26);
             label1.Name = "label1";
             label1.Size = new Size(198, 48);
             label1.TabIndex = 0;
@@ -121,237 +122,263 @@
             // 
             // button8
             // 
-            button8.Location = new Point(235, 188);
+            button8.BackColor = Color.White;
+            button8.Location = new Point(257, 223);
             button8.Name = "button8";
             button8.Size = new Size(30, 30);
             button8.TabIndex = 13;
             button8.Text = "A";
-            button8.UseVisualStyleBackColor = true;
+            button8.UseVisualStyleBackColor = false;
             // 
             // button9
             // 
-            button9.Location = new Point(375, 224);
+            button9.BackColor = Color.White;
+            button9.Location = new Point(397, 259);
             button9.Name = "button9";
             button9.Size = new Size(30, 30);
             button9.TabIndex = 14;
             button9.Text = "N";
-            button9.UseVisualStyleBackColor = true;
+            button9.UseVisualStyleBackColor = false;
             // 
             // button10
             // 
-            button10.Location = new Point(410, 296);
+            button10.BackColor = Color.White;
+            button10.Location = new Point(432, 331);
             button10.Name = "button10";
             button10.Size = new Size(30, 30);
             button10.TabIndex = 15;
             button10.Text = "Y";
-            button10.UseVisualStyleBackColor = true;
+            button10.UseVisualStyleBackColor = false;
             // 
             // button11
             // 
-            button11.Location = new Point(305, 260);
+            button11.BackColor = Color.White;
+            button11.Location = new Point(327, 295);
             button11.Name = "button11";
             button11.Size = new Size(30, 30);
             button11.TabIndex = 16;
             button11.Text = "U";
-            button11.UseVisualStyleBackColor = true;
+            button11.UseVisualStyleBackColor = false;
             // 
             // button12
             // 
-            button12.Location = new Point(445, 188);
+            button12.BackColor = Color.White;
+            button12.Location = new Point(467, 223);
             button12.Name = "button12";
             button12.Size = new Size(30, 30);
             button12.TabIndex = 17;
             button12.Text = "I";
-            button12.UseVisualStyleBackColor = true;
+            button12.UseVisualStyleBackColor = false;
             // 
             // button13
             // 
-            button13.Location = new Point(270, 260);
+            button13.BackColor = Color.White;
+            button13.Location = new Point(292, 295);
             button13.Name = "button13";
             button13.Size = new Size(30, 30);
             button13.TabIndex = 18;
             button13.Text = "T";
-            button13.UseVisualStyleBackColor = true;
+            button13.UseVisualStyleBackColor = false;
             // 
             // button14
             // 
-            button14.Location = new Point(340, 296);
+            button14.BackColor = Color.White;
+            button14.Location = new Point(362, 331);
             button14.Name = "button14";
             button14.Size = new Size(30, 30);
             button14.TabIndex = 19;
             button14.Text = "H";
-            button14.UseVisualStyleBackColor = true;
+            button14.UseVisualStyleBackColor = false;
             // 
             // button15
             // 
-            button15.Location = new Point(270, 296);
+            button15.BackColor = Color.White;
+            button15.Location = new Point(292, 331);
             button15.Name = "button15";
             button15.Size = new Size(30, 30);
             button15.TabIndex = 20;
             button15.Text = "P";
-            button15.UseVisualStyleBackColor = true;
+            button15.UseVisualStyleBackColor = false;
             // 
             // button16
             // 
-            button16.Location = new Point(375, 188);
+            button16.BackColor = Color.White;
+            button16.Location = new Point(397, 223);
             button16.Name = "button16";
             button16.Size = new Size(30, 30);
             button16.TabIndex = 21;
             button16.Text = "E";
-            button16.UseVisualStyleBackColor = true;
+            button16.UseVisualStyleBackColor = false;
             // 
             // button17
             // 
-            button17.Location = new Point(340, 224);
+            button17.BackColor = Color.White;
+            button17.Location = new Point(362, 259);
             button17.Name = "button17";
             button17.Size = new Size(30, 30);
             button17.TabIndex = 22;
             button17.Text = "M";
-            button17.UseVisualStyleBackColor = true;
+            button17.UseVisualStyleBackColor = false;
             // 
             // button18
             // 
-            button18.Location = new Point(340, 188);
+            button18.BackColor = Color.White;
+            button18.Location = new Point(362, 223);
             button18.Name = "button18";
             button18.Size = new Size(30, 30);
             button18.TabIndex = 23;
             button18.Text = "D";
-            button18.UseVisualStyleBackColor = true;
+            button18.UseVisualStyleBackColor = false;
             // 
             // button19
             // 
-            button19.Location = new Point(235, 224);
+            button19.BackColor = Color.White;
+            button19.Location = new Point(257, 259);
             button19.Name = "button19";
             button19.Size = new Size(30, 30);
             button19.TabIndex = 24;
             button19.Text = "J";
-            button19.UseVisualStyleBackColor = true;
+            button19.UseVisualStyleBackColor = false;
             // 
             // button20
             // 
-            button20.Location = new Point(410, 188);
+            button20.BackColor = Color.White;
+            button20.Location = new Point(432, 223);
             button20.Name = "button20";
             button20.Size = new Size(30, 30);
             button20.TabIndex = 25;
             button20.Text = "F";
-            button20.UseVisualStyleBackColor = true;
+            button20.UseVisualStyleBackColor = false;
             // 
             // button21
             // 
-            button21.Location = new Point(375, 260);
+            button21.BackColor = Color.White;
+            button21.Location = new Point(397, 295);
             button21.Name = "button21";
             button21.Size = new Size(30, 30);
             button21.TabIndex = 26;
             button21.Text = "V";
-            button21.UseVisualStyleBackColor = true;
+            button21.UseVisualStyleBackColor = false;
             // 
             // button22
             // 
-            button22.Location = new Point(410, 224);
+            button22.BackColor = Color.White;
+            button22.Location = new Point(432, 259);
             button22.Name = "button22";
             button22.Size = new Size(30, 30);
             button22.TabIndex = 27;
             button22.Text = "O";
-            button22.UseVisualStyleBackColor = true;
+            button22.UseVisualStyleBackColor = false;
             // 
             // button23
             // 
-            button23.Location = new Point(375, 296);
+            button23.BackColor = Color.White;
+            button23.Location = new Point(397, 331);
             button23.Name = "button23";
             button23.Size = new Size(30, 30);
             button23.TabIndex = 28;
             button23.Text = "Q";
-            button23.UseVisualStyleBackColor = true;
+            button23.UseVisualStyleBackColor = false;
             // 
             // button24
             // 
-            button24.Location = new Point(305, 296);
+            button24.BackColor = Color.White;
+            button24.Location = new Point(327, 331);
             button24.Name = "button24";
             button24.Size = new Size(30, 30);
             button24.TabIndex = 29;
             button24.Text = "G";
-            button24.UseVisualStyleBackColor = true;
+            button24.UseVisualStyleBackColor = false;
             // 
             // button25
             // 
-            button25.Location = new Point(410, 260);
+            button25.BackColor = Color.White;
+            button25.Location = new Point(432, 295);
             button25.Name = "button25";
             button25.Size = new Size(30, 30);
             button25.TabIndex = 30;
             button25.Text = "X";
-            button25.UseVisualStyleBackColor = true;
+            button25.UseVisualStyleBackColor = false;
             // 
             // button26
             // 
-            button26.Location = new Point(445, 224);
+            button26.BackColor = Color.White;
+            button26.Location = new Point(467, 259);
             button26.Name = "button26";
             button26.Size = new Size(30, 30);
             button26.TabIndex = 31;
             button26.Text = "Z";
-            button26.UseVisualStyleBackColor = true;
+            button26.UseVisualStyleBackColor = false;
             // 
             // button27
             // 
-            button27.Location = new Point(445, 260);
+            button27.BackColor = Color.White;
+            button27.Location = new Point(467, 295);
             button27.Name = "button27";
             button27.Size = new Size(30, 30);
             button27.TabIndex = 32;
             button27.Text = "R";
-            button27.UseVisualStyleBackColor = true;
+            button27.UseVisualStyleBackColor = false;
             // 
             // button28
             // 
-            button28.Location = new Point(305, 188);
+            button28.BackColor = Color.White;
+            button28.Location = new Point(327, 223);
             button28.Name = "button28";
             button28.Size = new Size(30, 30);
             button28.TabIndex = 33;
             button28.Text = "C";
-            button28.UseVisualStyleBackColor = true;
+            button28.UseVisualStyleBackColor = false;
             // 
             // button29
             // 
-            button29.Location = new Point(305, 224);
+            button29.BackColor = Color.White;
+            button29.Location = new Point(327, 259);
             button29.Name = "button29";
             button29.Size = new Size(30, 30);
             button29.TabIndex = 34;
             button29.Text = "L";
-            button29.UseVisualStyleBackColor = true;
+            button29.UseVisualStyleBackColor = false;
             // 
             // button30
             // 
-            button30.Location = new Point(340, 260);
+            button30.BackColor = Color.White;
+            button30.Location = new Point(362, 295);
             button30.Name = "button30";
             button30.Size = new Size(30, 30);
             button30.TabIndex = 35;
             button30.Text = "W";
-            button30.UseVisualStyleBackColor = true;
+            button30.UseVisualStyleBackColor = false;
             // 
             // button31
             // 
-            button31.Location = new Point(270, 188);
+            button31.BackColor = Color.White;
+            button31.Location = new Point(292, 223);
             button31.Name = "button31";
             button31.Size = new Size(30, 30);
             button31.TabIndex = 36;
             button31.Text = "B";
-            button31.UseVisualStyleBackColor = true;
+            button31.UseVisualStyleBackColor = false;
             // 
             // button32
             // 
-            button32.Location = new Point(270, 224);
+            button32.BackColor = Color.White;
+            button32.Location = new Point(292, 259);
             button32.Name = "button32";
             button32.Size = new Size(30, 30);
             button32.TabIndex = 37;
             button32.Text = "K";
-            button32.UseVisualStyleBackColor = true;
+            button32.UseVisualStyleBackColor = false;
             // 
             // button33
             // 
-            button33.Location = new Point(235, 260);
+            button33.BackColor = Color.White;
+            button33.Location = new Point(257, 295);
             button33.Name = "button33";
             button33.Size = new Size(30, 30);
             button33.TabIndex = 38;
             button33.Text = "S";
-            button33.UseVisualStyleBackColor = true;
+            button33.UseVisualStyleBackColor = false;
             // 
             // button34
             // 
@@ -369,12 +396,13 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Charlemagne Std", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(366, 95);
+            label3.Location = new Point(432, 124);
             label3.Name = "label3";
             label3.Size = new Size(256, 29);
             label3.TabIndex = 40;
             label3.Text = "PAROLA TRATTINI";
             label3.TextAlign = ContentAlignment.TopCenter;
+            label3.Click += label3_Click;
             // 
             // label6
             // 
@@ -400,7 +428,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(308, 157);
+            label8.Location = new Point(330, 192);
             label8.Name = "label8";
             label8.Size = new Size(98, 15);
             label8.TabIndex = 43;
@@ -410,7 +438,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(551, 157);
+            label9.Location = new Point(567, 192);
             label9.Name = "label9";
             label9.Size = new Size(95, 15);
             label9.TabIndex = 44;
@@ -418,7 +446,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(551, 184);
+            textBox1.Location = new Point(567, 219);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(120, 23);
             textBox1.TabIndex = 45;
@@ -427,7 +455,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(551, 220);
+            label10.Location = new Point(567, 255);
             label10.Name = "label10";
             label10.Size = new Size(99, 15);
             label10.TabIndex = 46;
@@ -435,31 +463,34 @@
             // 
             // button35
             // 
-            button35.Location = new Point(551, 267);
+            button35.BackColor = Color.White;
+            button35.Location = new Point(567, 302);
             button35.Name = "button35";
             button35.Size = new Size(104, 23);
             button35.TabIndex = 50;
             button35.Text = "ULTIMA LETTERA";
-            button35.UseVisualStyleBackColor = true;
+            button35.UseVisualStyleBackColor = false;
             button35.Click += button35_Click;
             // 
             // button36
             // 
-            button36.Location = new Point(553, 238);
+            button36.BackColor = Color.White;
+            button36.Location = new Point(569, 273);
             button36.Name = "button36";
             button36.Size = new Size(102, 23);
             button36.TabIndex = 51;
             button36.Text = "PRIMA LETTERA";
-            button36.UseVisualStyleBackColor = true;
+            button36.UseVisualStyleBackColor = false;
             // 
             // button37
             // 
-            button37.Location = new Point(553, 292);
+            button37.BackColor = Color.White;
+            button37.Location = new Point(569, 327);
             button37.Name = "button37";
             button37.Size = new Size(102, 23);
             button37.TabIndex = 52;
             button37.Text = "ENTRAMBE";
-            button37.UseVisualStyleBackColor = true;
+            button37.UseVisualStyleBackColor = false;
             button37.Click += button37_Click;
             // 
             // stati
@@ -539,12 +570,24 @@
             media.UseVisualStyleBackColor = true;
             media.CheckedChanged += media_CheckedChanged;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.White;
+            button1.Location = new Point(292, 124);
+            button1.Name = "button1";
+            button1.Size = new Size(115, 29);
+            button1.TabIndex = 60;
+            button1.Text = "GENERA PAROLA";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(192, 192, 255);
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(media);
             Controls.Add(difficile);
             Controls.Add(facile);
@@ -650,5 +693,6 @@
         private CheckBox facile;
         private CheckBox difficile;
         private CheckBox media;
+        private Button button1;
     }
 }
