@@ -103,7 +103,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(12, 33);
+            label4.Location = new Point(12, 160);
             label4.Name = "label4";
             label4.Size = new Size(83, 15);
             label4.TabIndex = 4;
@@ -114,7 +114,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(12, 188);
+            label5.Location = new Point(12, 48);
             label5.Name = "label5";
             label5.Size = new Size(118, 15);
             label5.TabIndex = 9;
@@ -129,6 +129,7 @@
             button8.TabIndex = 13;
             button8.Text = "A";
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
@@ -396,7 +397,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Charlemagne Std", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(432, 124);
+            label3.Location = new Point(441, 124);
             label3.Name = "label3";
             label3.Size = new Size(256, 29);
             label3.TabIndex = 40;
@@ -496,7 +497,7 @@
             // stati
             // 
             stati.AutoSize = true;
-            stati.Location = new Point(18, 55);
+            stati.Location = new Point(18, 182);
             stati.Name = "stati";
             stati.Size = new Size(53, 19);
             stati.TabIndex = 53;
@@ -507,7 +508,7 @@
             // film
             // 
             film.AutoSize = true;
-            film.Location = new Point(18, 130);
+            film.Location = new Point(18, 257);
             film.Name = "film";
             film.Size = new Size(52, 19);
             film.TabIndex = 54;
@@ -518,7 +519,7 @@
             // serie
             // 
             serie.AutoSize = true;
-            serie.Location = new Point(18, 105);
+            serie.Location = new Point(18, 232);
             serie.Name = "serie";
             serie.Size = new Size(54, 19);
             serie.TabIndex = 55;
@@ -529,7 +530,7 @@
             // cantanti
             // 
             cantanti.AutoSize = true;
-            cantanti.Location = new Point(18, 80);
+            cantanti.Location = new Point(18, 207);
             cantanti.Name = "cantanti";
             cantanti.Size = new Size(82, 19);
             cantanti.TabIndex = 56;
@@ -540,7 +541,7 @@
             // facile
             // 
             facile.AutoSize = true;
-            facile.Location = new Point(18, 213);
+            facile.Location = new Point(18, 73);
             facile.Name = "facile";
             facile.Size = new Size(62, 19);
             facile.TabIndex = 57;
@@ -551,7 +552,7 @@
             // difficile
             // 
             difficile.AutoSize = true;
-            difficile.Location = new Point(17, 260);
+            difficile.Location = new Point(17, 120);
             difficile.Name = "difficile";
             difficile.Size = new Size(75, 19);
             difficile.TabIndex = 58;
@@ -562,7 +563,7 @@
             // media
             // 
             media.AutoSize = true;
-            media.Location = new Point(17, 235);
+            media.Location = new Point(17, 95);
             media.Name = "media";
             media.Size = new Size(62, 19);
             media.TabIndex = 59;

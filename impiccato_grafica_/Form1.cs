@@ -7,17 +7,19 @@ namespace impiccato_grafica_
         public Form1()
         {
             InitializeComponent();
+            
         }
         int punti = 0;
         int i = 0, j = 0, l = 0;
         Random random = new Random();
-        string parola = "";
+        string parola = "abc";
         int ntentativi = 0;
+        string lettere_provate = "";
+        
         private void label4_Click(object sender, EventArgs e)
         {
 
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
 
@@ -65,6 +67,7 @@ namespace impiccato_grafica_
         {
             string x = "Cantanti.txt";
             parola = stampaparola(x, ref ntentativi, ref punti);
+
         }
 
         private void serie_CheckedChanged(object sender, EventArgs e)
@@ -109,7 +112,7 @@ namespace impiccato_grafica_
             string e = "";
             for (int i = 0; i < a.Length; i++)
             {
-                e +=(a[i]);
+                e += (a[i] + " ");
             }
             return e;
         }
@@ -117,7 +120,7 @@ namespace impiccato_grafica_
         {
             for (int i = 0; i < parola.Length; i++)
             {
-                par[i] = "_ ";
+                par[i] = "_";
             }
         }
 
@@ -136,28 +139,43 @@ namespace impiccato_grafica_
             trattini(parola, ref par);
             label3.Text = stamparray(par);
         }
-        void provalettera(ref string[] par, string[] r, string parola, ref int ntentativi, ref string lettere_provate)
+        void provalettera(string[] par, string[] r, string parola,int ntentativi,string lettere_provate,string x)
         {
-            Console.WriteLine("Inserisci lettera (se sbagli sprechi due tentativi)");
-            string l = Console.ReadLine();
-            lettere_provate = lettere_provate + l + ", ";
-            if (parola.Contains(l) == true)
+            lettere_provate = lettere_provate + x + ", ";
+            if (parola.Contains(x) == true)
             {
-                Console.WriteLine("Hai indovinato la lettera!");
                 for (int i = 0; i < r.Length; i++)
                 {
-                    if (r[i] == l)
+                    if (r[i] == x)
                     {
-                        par[i] = l;
+                        par[i] = x;
+                    }
+                    else
+                    {
+                        par[i] = "_";
                     }
                 }
             }
             else
             {
-                Console.WriteLine("Non hai indovinato la lettera!");
                 ntentativi--;
             }
             ntentativi--;
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            string[] r = new string[parola.Length];
+            for (int i = 0; i < parola.Length; i++)
+            {
+                r[i] = parola[i].ToString();
+            }
+            string[] par = new string[parola.Length];
+            string x = "a";
+            provalettera(par, r, parola, ntentativi, lettere_provate, x);
+            label3.Text = stamparray(par);
+        }
+
     }
+           
 }
