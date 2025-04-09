@@ -77,6 +77,7 @@
             difficile = new CheckBox();
             media = new CheckBox();
             button1 = new Button();
+            label11 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -170,6 +171,7 @@
             button12.TabIndex = 17;
             button12.Text = "I";
             button12.UseVisualStyleBackColor = false;
+            button12.Click += button12_Click;
             // 
             // button13
             // 
@@ -210,6 +212,7 @@
             button16.TabIndex = 21;
             button16.Text = "E";
             button16.UseVisualStyleBackColor = false;
+            button16.Click += button16_Click;
             // 
             // button17
             // 
@@ -230,6 +233,7 @@
             button18.TabIndex = 23;
             button18.Text = "D";
             button18.UseVisualStyleBackColor = false;
+            button18.Click += button18_Click;
             // 
             // button19
             // 
@@ -240,6 +244,7 @@
             button19.TabIndex = 24;
             button19.Text = "J";
             button19.UseVisualStyleBackColor = false;
+            button19.Click += button19_Click;
             // 
             // button20
             // 
@@ -250,6 +255,7 @@
             button20.TabIndex = 25;
             button20.Text = "F";
             button20.UseVisualStyleBackColor = false;
+            button20.Click += button20_Click;
             // 
             // button21
             // 
@@ -330,6 +336,7 @@
             button28.TabIndex = 33;
             button28.Text = "C";
             button28.UseVisualStyleBackColor = false;
+            button28.Click += button28_Click;
             // 
             // button29
             // 
@@ -360,6 +367,7 @@
             button31.TabIndex = 36;
             button31.Text = "B";
             button31.UseVisualStyleBackColor = false;
+            button31.Click += button31_Click;
             // 
             // button32
             // 
@@ -370,6 +378,7 @@
             button32.TabIndex = 37;
             button32.Text = "K";
             button32.UseVisualStyleBackColor = false;
+            button32.Click += button32_Click;
             // 
             // button33
             // 
@@ -411,9 +420,10 @@
             label6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label6.Location = new Point(12, 390);
             label6.Name = "label6";
-            label6.Size = new Size(108, 15);
+            label6.Size = new Size(68, 15);
             label6.TabIndex = 41;
-            label6.Text = "LETTERE PROVATE:";
+            label6.Text = "TENTATIVI:";
+            label6.Click += label6_Click;
             // 
             // label7
             // 
@@ -582,12 +592,21 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(86, 390);
+            label11.Name = "label11";
+            label11.Size = new Size(0, 15);
+            label11.TabIndex = 61;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(192, 192, 255);
             ClientSize = new Size(800, 450);
+            Controls.Add(label11);
             Controls.Add(button1);
             Controls.Add(media);
             Controls.Add(difficile);
@@ -695,5 +714,6 @@
         private CheckBox difficile;
         private CheckBox media;
         private Button button1;
+        private Label label11;
     }
 }
