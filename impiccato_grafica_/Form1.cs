@@ -142,7 +142,7 @@ namespace impiccato_grafica_
             trattini(parola, ref par);
             label3.Text = stamparray(par);
         }
-        void provalettera(string[] par, string[] r, string parola, int ntentativi, string lettere_provate, string x)
+        void provalettera(string[] par, string[] r, string parola, ref int ntentativi, string lettere_provate, string x)
         {
             lettere_provate = lettere_provate + x + ", ";
             if (parola.Contains(x) == true)
@@ -154,12 +154,14 @@ namespace impiccato_grafica_
                         par[i] = x;
                     }
                 }
+                label11.Text = ntentativi.ToString();
             }
             else
             {
                 ntentativi--;
+                label11.Text = ntentativi.ToString();
             }
-            label11.Text = ntentativi.ToString();
+            
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -177,7 +179,7 @@ namespace impiccato_grafica_
             }
             string[] par = new string[label3.Text.Length];
             string x = "a";
-            provalettera(arr, r, parola, ntentativi, lettere_provate, x);
+            provalettera(arr, r, parola, ref ntentativi, lettere_provate, x);
             label3.Text = stamparray(arr);
             button8.Enabled = false;
         }
@@ -197,7 +199,7 @@ namespace impiccato_grafica_
             }
             string[] par = new string[label3.Text.Length];
             string x = "b";
-            provalettera(arr, r, parola, ntentativi, lettere_provate, x);
+            provalettera(arr, r, parola,ref ntentativi, lettere_provate, x);
             label3.Text = stamparray(arr);
             button31.Enabled = false;
         }
@@ -217,7 +219,7 @@ namespace impiccato_grafica_
             }
             string[] par = new string[label3.Text.Length];
             string x = "c";
-            provalettera(arr, r, parola, ntentativi, lettere_provate, x);
+            provalettera(arr, r, parola, ref ntentativi, lettere_provate, x);
             label3.Text = stamparray(arr);
             button28.Enabled = false;
         }
@@ -237,7 +239,7 @@ namespace impiccato_grafica_
             }
             string[] par = new string[label3.Text.Length];
             string x = "d";
-            provalettera(arr, r, parola, ntentativi, lettere_provate, x);
+            provalettera(arr, r, parola, ref ntentativi, lettere_provate, x);
             label3.Text = stamparray(arr);
             button18.Enabled = false;
         }
@@ -257,7 +259,7 @@ namespace impiccato_grafica_
             }
             string[] par = new string[label3.Text.Length];
             string x = "e";
-            provalettera(arr, r, parola, ntentativi, lettere_provate, x);
+            provalettera(arr, r, parola, ref ntentativi, lettere_provate, x);
             label3.Text = stamparray(arr);
             button16.Enabled = false;
         }
@@ -277,7 +279,7 @@ namespace impiccato_grafica_
             }
             string[] par = new string[label3.Text.Length];
             string x = "f";
-            provalettera(arr, r, parola, ntentativi, lettere_provate, x);
+            provalettera(arr, r, parola,ref ntentativi, lettere_provate, x);
             label3.Text = stamparray(arr);
             button20.Enabled = false;
         }
@@ -297,7 +299,7 @@ namespace impiccato_grafica_
             }
             string[] par = new string[label3.Text.Length];
             string x = "i";
-            provalettera(arr, r, parola, ntentativi, lettere_provate, x);
+            provalettera(arr, r, parola, ref ntentativi, lettere_provate, x);
             label3.Text = stamparray(arr);
             button12.Enabled = false;
         }
@@ -317,7 +319,7 @@ namespace impiccato_grafica_
             }
             string[] par = new string[label3.Text.Length];
             string x = "j";
-            provalettera(arr, r, parola, ntentativi, lettere_provate, x);
+            provalettera(arr, r, parola,ref ntentativi, lettere_provate, x);
             label3.Text = stamparray(arr);
             button19.Enabled = false;
         }
@@ -337,7 +339,7 @@ namespace impiccato_grafica_
             }
             string[] par = new string[label3.Text.Length];
             string x = "k";
-            provalettera(arr, r, parola, ntentativi, lettere_provate, x);
+            provalettera(arr, r, parola, ref ntentativi, lettere_provate, x);
             label3.Text = stamparray(arr);
             button32.Enabled = false;
         }
@@ -346,6 +348,7 @@ namespace impiccato_grafica_
         {
 
         }
+        
     }
 
 }
