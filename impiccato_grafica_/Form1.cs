@@ -14,8 +14,8 @@ namespace impiccato_grafica_
         Random random = new Random();
         string parola = "abc";
         int ntentativi = 0;
-        string lettere_provate = "";
-
+        string paroleindovinate = "";
+        int puntitot = 0;
         private void label4_Click(object sender, EventArgs e)
         {
 
@@ -42,12 +42,14 @@ namespace impiccato_grafica_
 
         private void button35_Click(object sender, EventArgs e)
         {
-
+            ultima();
         }
-
+        
         private void button37_Click(object sender, EventArgs e)
         {
-
+            ultima();
+            int x = 0;
+            indizi(x);
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -141,10 +143,36 @@ namespace impiccato_grafica_
             string[] par = new string[parola.Length];
             trattini(parola, ref par);
             label3.Text = stamparray(par);
+            label12.Text = "";
+            button8.Enabled = true;
+            button31.Enabled = true;
+            button28.Enabled = true;
+            button18.Enabled = true;
+            button16.Enabled = true;
+            button20.Enabled = true;
+            button12.Enabled = true;
+            button19.Enabled = true;
+            button32.Enabled = true;
+            button29.Enabled = true;
+            button22.Enabled = true;
+            button9.Enabled = true;
+            button17.Enabled = true;
+            button11.Enabled = true;
+            button13.Enabled = true;
+            button33.Enabled = true;
+            button26.Enabled = true;
+            button30.Enabled = true;
+            button25.Enabled = true;
+            button21.Enabled = true;
+            button24.Enabled = true;
+            button15.Enabled = true;
+            button27.Enabled = true;
+            button23.Enabled = true;
+            button10.Enabled = true;
+            button14.Enabled = true;
         }
-        void provalettera(string[] par, string[] r, string parola, ref int ntentativi, string lettere_provate, string x)
+        void provalettera(string[] par, string[] r, string parola, ref int ntentativi, string x)
         {
-            lettere_provate = lettere_provate + x + ", ";
             if (parola.Contains(x) == true)
             {
                 for (int i = 0; i < r.Length; i++)
@@ -161,186 +189,104 @@ namespace impiccato_grafica_
                 ntentativi--;
                 label11.Text = ntentativi.ToString();
             }
-            
+
+        }
+        private void lettere(string a)
+        {
+            if (ntentativi > 0)
+            {
+                string[] r = new string[parola.Length];
+                for (int i = 0; i < r.Length; i++)
+                {
+                    r[i] = parola[i].ToString();
+                }
+                string z = label3.Text.Replace(" ", "");
+                string[] arr = new string[z.Length];
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    arr[i] = z[i].ToString();
+                }
+                string[] par = new string[label3.Text.Length];
+                string x = a;
+                provalettera(arr, r, parola, ref ntentativi, x);
+                label3.Text = stamparray(arr);
+                if (label3.Text.Replace(" ", "") == parola)
+                {
+                    puntitot += punti;
+                    label14.Text = puntitot.ToString();
+                    label12.Text = "Hai Vinto!!!";
+                    label3.Text = parola;
+                    paroleindovinate += parola + " ";
+                    label13.Text = paroleindovinate;
+                }
+            }
+            else
+            {
+                label12.Text = "Hai Perso!!!";
+                label3.Text = parola;
+            }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            string[] r = new string[parola.Length];
-            for (int i = 0; i < r.Length; i++)
-            {
-                r[i] = parola[i].ToString();
-            }
-            string z = label3.Text.Replace(" ", "");
-            string[] arr = new string[z.Length];
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] = z[i].ToString();
-            }
-            string[] par = new string[label3.Text.Length];
             string x = "a";
-            provalettera(arr, r, parola, ref ntentativi, lettere_provate, x);
-            label3.Text = stamparray(arr);
+            lettere(x);
             button8.Enabled = false;
         }
 
         private void button31_Click(object sender, EventArgs e)
         {
-            string[] r = new string[parola.Length];
-            for (int i = 0; i < r.Length; i++)
-            {
-                r[i] = parola[i].ToString();
-            }
-            string z = label3.Text.Replace(" ", "");
-            string[] arr = new string[z.Length];
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] = z[i].ToString();
-            }
-            string[] par = new string[label3.Text.Length];
             string x = "b";
-            provalettera(arr, r, parola,ref ntentativi, lettere_provate, x);
-            label3.Text = stamparray(arr);
+            lettere(x);
             button31.Enabled = false;
         }
 
         private void button28_Click(object sender, EventArgs e)
         {
-            string[] r = new string[parola.Length];
-            for (int i = 0; i < r.Length; i++)
-            {
-                r[i] = parola[i].ToString();
-            }
-            string z = label3.Text.Replace(" ", "");
-            string[] arr = new string[z.Length];
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] = z[i].ToString();
-            }
-            string[] par = new string[label3.Text.Length];
             string x = "c";
-            provalettera(arr, r, parola, ref ntentativi, lettere_provate, x);
-            label3.Text = stamparray(arr);
+            lettere(x);
             button28.Enabled = false;
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
-            string[] r = new string[parola.Length];
-            for (int i = 0; i < r.Length; i++)
-            {
-                r[i] = parola[i].ToString();
-            }
-            string z = label3.Text.Replace(" ", "");
-            string[] arr = new string[z.Length];
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] = z[i].ToString();
-            }
-            string[] par = new string[label3.Text.Length];
             string x = "d";
-            provalettera(arr, r, parola, ref ntentativi, lettere_provate, x);
-            label3.Text = stamparray(arr);
+            lettere(x);
             button18.Enabled = false;
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
-            string[] r = new string[parola.Length];
-            for (int i = 0; i < r.Length; i++)
-            {
-                r[i] = parola[i].ToString();
-            }
-            string z = label3.Text.Replace(" ", "");
-            string[] arr = new string[z.Length];
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] = z[i].ToString();
-            }
-            string[] par = new string[label3.Text.Length];
             string x = "e";
-            provalettera(arr, r, parola, ref ntentativi, lettere_provate, x);
-            label3.Text = stamparray(arr);
+            lettere(x);
             button16.Enabled = false;
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
-            string[] r = new string[parola.Length];
-            for (int i = 0; i < r.Length; i++)
-            {
-                r[i] = parola[i].ToString();
-            }
-            string z = label3.Text.Replace(" ", "");
-            string[] arr = new string[z.Length];
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] = z[i].ToString();
-            }
-            string[] par = new string[label3.Text.Length];
             string x = "f";
-            provalettera(arr, r, parola,ref ntentativi, lettere_provate, x);
-            label3.Text = stamparray(arr);
+            lettere(x);
             button20.Enabled = false;
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            string[] r = new string[parola.Length];
-            for (int i = 0; i < r.Length; i++)
-            {
-                r[i] = parola[i].ToString();
-            }
-            string z = label3.Text.Replace(" ", "");
-            string[] arr = new string[z.Length];
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] = z[i].ToString();
-            }
-            string[] par = new string[label3.Text.Length];
             string x = "i";
-            provalettera(arr, r, parola, ref ntentativi, lettere_provate, x);
-            label3.Text = stamparray(arr);
+            lettere(x);
             button12.Enabled = false;
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
-            string[] r = new string[parola.Length];
-            for (int i = 0; i < r.Length; i++)
-            {
-                r[i] = parola[i].ToString();
-            }
-            string z = label3.Text.Replace(" ", "");
-            string[] arr = new string[z.Length];
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] = z[i].ToString();
-            }
-            string[] par = new string[label3.Text.Length];
             string x = "j";
-            provalettera(arr, r, parola,ref ntentativi, lettere_provate, x);
-            label3.Text = stamparray(arr);
+            lettere(x);
             button19.Enabled = false;
         }
 
         private void button32_Click(object sender, EventArgs e)
         {
-            string[] r = new string[parola.Length];
-            for (int i = 0; i < r.Length; i++)
-            {
-                r[i] = parola[i].ToString();
-            }
-            string z = label3.Text.Replace(" ", "");
-            string[] arr = new string[z.Length];
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] = z[i].ToString();
-            }
-            string[] par = new string[label3.Text.Length];
             string x = "k";
-            provalettera(arr, r, parola, ref ntentativi, lettere_provate, x);
-            label3.Text = stamparray(arr);
+            lettere(x);
             button32.Enabled = false;
         }
 
@@ -348,7 +294,234 @@ namespace impiccato_grafica_
         {
 
         }
-        
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            string x = "l";
+            lettere(x);
+            button29.Enabled = false;
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            string x = "m";
+            lettere(x);
+            button17.Enabled = false;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            string x = "n";
+            lettere(x);
+            button9.Enabled = false;
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            string x = "o";
+            lettere(x);
+            button22.Enabled = false;
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            string x = "z";
+            lettere(x);
+            button26.Enabled = false;
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+            string x = "s";
+            lettere(x);
+            button33.Enabled = false;
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            string x = "t";
+            lettere(x);
+            button13.Enabled = false;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            string x = "u";
+            lettere(x);
+            button11.Enabled = false;
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            string x = "w";
+            lettere(x);
+            button30.Enabled = false;
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            string x = "v";
+            lettere(x);
+            button21.Enabled = false;
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            string x = "x";
+            lettere(x);
+            button25.Enabled = false;
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            string x = "r";
+            lettere(x);
+            button27.Enabled = false;
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            string x = "p";
+            lettere(x);
+            button15.Enabled = false;
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            string x = "g";
+            lettere(x);
+            button24.Enabled = false;
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            string x = "h";
+            lettere(x);
+            button14.Enabled = false;
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            string x = "q";
+            lettere(x);
+            button23.Enabled = false;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            string x = "y";
+            lettere(x);
+            button10.Enabled = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (ntentativi > 0)
+            {
+                if (textBox1.Text == parola)
+                {
+                    label12.Text = "Hai Vinto!!!";
+                    label3.Text = parola;
+                    paroleindovinate += parola + " ";
+                    label13.Text = paroleindovinate;
+                    puntitot += punti;
+                    label14.Text = puntitot.ToString();
+                }
+                else
+                {
+                    label12.Text = "Hai sbagliato parola!!!";
+                    ntentativi--;
+                    label11.Text = ntentativi.ToString();
+                }
+            }
+            else
+            {
+                label12.Text = "Hai Perso!!!";
+                label3.Text = parola;
+            }
+        }
+        private void indizi(int x)
+        {
+            if (ntentativi > 0)
+            {
+                string[] r = new string[parola.Length];
+                for (int i = 0; i < r.Length; i++)
+                {
+                    r[i] = parola[i].ToString();
+                }
+                string z = label3.Text.Replace(" ", "");
+                string[] arr = new string[z.Length];
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    arr[i] = z[i].ToString();
+                }
+                string[] par = new string[label3.Text.Length];
+                arr[x] = r[x];
+                ntentativi--;
+                label11.Text = ntentativi.ToString();
+                label3.Text = stamparray(arr);
+            }
+            else
+            {
+                label12.Text = "Hai Perso!!!";
+                label3.Text = parola;
+            }
+            if (label3.Text.Replace(" ", "") == parola)
+            {
+                puntitot += punti;
+                label14.Text = puntitot.ToString();
+                label12.Text = "Hai Vinto!!!";
+                label3.Text = parola;
+                paroleindovinate += parola + " ";
+                label13.Text = paroleindovinate;
+            }
+        }
+        private void button36_Click(object sender, EventArgs e)
+        {
+            int x = 0;
+            indizi(x);
+        }
+        private void ultima()
+        {
+            if (ntentativi > 0)
+            {
+                string[] r = new string[parola.Length];
+                for (int i = 0; i < r.Length; i++)
+                {
+                    r[i] = parola[i].ToString();
+                }
+                string z = label3.Text.Replace(" ", "");
+                string[] arr = new string[z.Length];
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    arr[i] = z[i].ToString();
+                }
+                string[] par = new string[label3.Text.Length];
+                arr[arr.Length - 1] = r[arr.Length - 1];
+                ntentativi--;
+                label11.Text = ntentativi.ToString();
+                label3.Text = stamparray(arr);
+            }
+            else
+            {
+                label12.Text = "Hai Perso!!!";
+                label3.Text = parola;
+            }
+            if (label3.Text.Replace(" ", "") == parola)
+            {
+                puntitot += punti;
+                label14.Text = puntitot.ToString();
+                label12.Text = "Hai Vinto!!!";
+                label3.Text = parola;
+                paroleindovinate += parola + " ";
+                label13.Text = paroleindovinate;
+            }
+        }
     }
 
 }
